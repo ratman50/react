@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/react/18.0.0-rc.0-next-42c30e8b1-20220104/umd/react.production.min.js"
+        integrity="sha512-7y04xccntt38Gl4LrefparQZ7RRRN6jBwDKU7Zuqa2mmRK+Sn4HhqVQx6+csvbH6xDU9cV/7CObEaMIKq1HXEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.0.0-rc.0-next-42c30e8b1-20220104/umd/react-dom.production.min.js"
+        integrity="sha512-W39pxRnm8cOzWii98Fe1MicLWhegskiImzZCoiCPEOK5cQO6+yjUBXJY2Yg0KsPy53tzfY1hwn1i+Ro6g35jpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"
+        integrity="sha512-kp7YHLxuJDJcOzStgd6vtpxr4ZU9kjn77e6dBsivSz+pUuAuMlE2UTdKB7jjsWT84qbS8kdCWHPETnP/ctrFsA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        h1 {
+            font-size: 1.4rem;
+            background-color: saddlebrown;
+        }
+
+        #title {
+            font-weight: bolder;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .parag {
+            padding: 01%;
+            background-color: slateblue;
+            font-size: 1.3rem;
+        }
+    </style>
+    <title>Syntaxe de react</title>
+</head>
+
+<body>
+    <div id="react-root"></div>
+    <script type="text/babel">
+        class Bonjour extends React.Component {
+            render() {
+                return (
+                    <div>
+                        <h1 id="title">Bonjour</h1>
+                        <p className="parag">I am {this.props.message}</p>
+                        <p>Je suis agé de {this.props.age} ans</p>
+                    </div>
+                );
+            }
+        }
+        ReactDOM.render(<Bonjour message="Pape Mactar NDIAYE" age={16} />, document.getElementById("react-root"));
+    </script>
+</body>
+
+</html>
