@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.0.0-rc.0-next-42c30e8b1-20220104/umd/react.production.min.js" integrity="sha512-7y04xccntt38Gl4LrefparQZ7RRRN6jBwDKU7Zuqa2mmRK+Sn4HhqVQx6+csvbH6xDU9cV/7CObEaMIKq1HXEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.0.0-rc.0-next-42c30e8b1-20220104/umd/react-dom.production.min.js" integrity="sha512-W39pxRnm8cOzWii98Fe1MicLWhegskiImzZCoiCPEOK5cQO6+yjUBXJY2Yg0KsPy53tzfY1hwn1i+Ro6g35jpg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Syntaxe de react</title>
+</head>
+<body>
+    <div id="react-root"></div>
+    <script>
+        ReactDOM.render( //render():permet d'afficher les éléments
+                        //ReactDOM.render(tag, where)
+            React.createElement('h1', null, "Bonjour le monde!!!"), document.getElementById("react-root")
+            //createElement permet de creer un element 
+            //createElement(tag,props,children)
+        )
+    </script>
+</body>
+</html>
